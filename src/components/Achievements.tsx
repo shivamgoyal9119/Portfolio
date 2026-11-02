@@ -54,7 +54,7 @@ export default function Achievements() {
           {/* Quick Profile Links */}
           <div className="flex items-center gap-3 mb-14 md:mb-0">
             <a
-              href="https://leetcode.com/u/shivamgoyal9119"
+              href="https://leetcode.com/u/Shivam9119/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold text-white bg-[#0B1120] hover:bg-[#15223C] border border-white/[0.09] hover:border-[#FFA116]/60 transition-all shadow-sm"
@@ -65,7 +65,7 @@ export default function Achievements() {
             </a>
 
             <a
-              href="https://www.codechef.com/users/shivamgoyal9119"
+              href="https://www.codechef.com/users/shivam_9119"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold text-white bg-[#0B1120] hover:bg-[#15223C] border border-white/[0.09] hover:border-[#00D8F6]/60 transition-all shadow-sm"

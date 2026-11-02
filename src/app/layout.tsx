@@ -3,7 +3,7 @@ import "./globals.css";
 import SpotlightCursor from "@/components/SpotlightCursor";
 
 export const metadata: Metadata = {
-  title: "Shivam Goyal | Software Engineer | Java Backend Developer",
+  title: "Portfolio of Shivam Goyal — Software Developer",
   description:
     "Explore Shivam Goyal's portfolio featuring Java, Spring Boot, Microservices, backend engineering projects, system design and competitive programming achievements.",
   keywords: [

@@ -112,7 +112,7 @@ export const PORTFOLIO_DATA = {
       },
       {
         platform: "LinkedIn",
-        url: "https://linkedin.com/in/shivam-goyal-backend",
+        url: "https://www.linkedin.com/in/shivam-goyal-9119sg/",
         handle: "Shivam Goyal",
         icon: "Linkedin",
       },

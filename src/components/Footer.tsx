@@ -2,7 +2,7 @@
 
 import React from "react";
 import { PORTFOLIO_DATA } from "@/data/portfolioData";
-import { ArrowUp, Heart, Code2 } from "lucide-react";
+import { ArrowUp, FileText } from "lucide-react";
 
 export default function Footer() {
   const { personal } = PORTFOLIO_DATA;
@@ -37,14 +37,27 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Copyright & Stack */}
-          <div className="text-center md:text-right space-y-1">
-            <p className="text-xs text-[#A1A1AA] font-mono">
-              Designed &amp; Engineered with Next.js, TypeScript &amp; Tailwind CSS
-            </p>
-            <p className="text-[11px] text-[#A1A1AA]/50 font-mono">
-              © {new Date().getFullYear()} Shivam Goyal. All rights reserved.
-            </p>
+          {/* Quick Resume Link & Copyright */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 text-center md:text-right">
+            <a
+              href={personal.contact.resumeUrl}
+              download="Shivam_Goyal_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-mono text-white/90 bg-[#111116] hover:bg-[#171720] border border-white/[0.08] hover:border-[#4169FF]/40 transition-colors"
+            >
+              <FileText className="w-3.5 h-3.5 text-[#4169FF]" />
+              <span>Resume PDF (195 KB)</span>
+            </a>
+
+            <div className="space-y-0.5">
+              <p className="text-xs text-[#A1A1AA] font-mono">
+                Designed &amp; Engineered with Next.js &amp; Tailwind CSS
+              </p>
+              <p className="text-[11px] text-[#A1A1AA]/50 font-mono">
+                © {new Date().getFullYear()} Shivam Goyal. All rights reserved.
+              </p>
+            </div>
           </div>
 
           {/* Back to top button */}
@@ -61,4 +74,3 @@ export default function Footer() {
     </footer>
   );
 }
-

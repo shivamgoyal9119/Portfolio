@@ -90,3 +90,4 @@ All portfolio content is centralized in **`src/data/portfolioData.ts`**:
 - Skills and categorization
 - Project descriptions, technical highlights, and repository URLs
 - Contest rankings, rating metrics, and tournament achievements
+

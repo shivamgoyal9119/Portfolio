@@ -328,7 +328,7 @@ export const PORTFOLIO_DATA = {
         "JavaScript",
       ],
       featured: false,
-      githubUrl: "https://github.com/shivamgoyal9119/mycineverse",
+      githubUrl: "https://github.com/shivamgoyal9119/Cineverse",
       liveUrl: undefined,
       architectureHighlights: [
         {

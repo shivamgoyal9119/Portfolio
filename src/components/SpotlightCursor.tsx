@@ -68,10 +68,9 @@ export default function SpotlightCursor() {
       className="pointer-events-none fixed inset-0 z-30 transition-opacity duration-300"
       style={{
         opacity: isVisible ? 1 : 0,
-        background: `radial-gradient(650px circle at ${position.x}px ${position.y}px, rgba(65, 105, 255, 0.045), rgba(151, 71, 255, 0.02) 40%, transparent 80%)`,
+        background: `radial-gradient(650px circle at ${position.x}px ${position.y}px, rgba(99, 102, 241, 0.075), rgba(168, 85, 247, 0.04) 35%, rgba(6, 182, 212, 0.02) 65%, transparent 80%)`,
       }}
       aria-hidden="true"
     />
   );
 }
-

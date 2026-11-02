@@ -12,27 +12,27 @@ export default function Certifications() {
   const getIssuerBadgeColor = (issuer: string) => {
     switch (issuer) {
       case "Google":
-        return "text-[#4285F4] bg-[#4285F4]/10 border-[#4285F4]/20";
+        return "text-[#38BDF8] bg-[#38BDF8]/15 border-[#38BDF8]/30 shadow-sm shadow-[#38BDF8]/20";
       case "HackerRank":
-        return "text-[#00EA64] bg-[#00EA64]/10 border-[#00EA64]/20";
+        return "text-[#10B981] bg-[#10B981]/15 border-[#10B981]/30 shadow-sm shadow-[#10B981]/20";
       case "CodeChef":
-        return "text-[#9747FF] bg-[#9747FF]/10 border-[#9747FF]/20";
+        return "text-[#C084FC] bg-[#A855F7]/15 border-[#A855F7]/30 shadow-sm shadow-[#A855F7]/20";
       case "Deloitte":
-        return "text-[#86BC25] bg-[#86BC25]/10 border-[#86BC25]/20";
+        return "text-[#A3E635] bg-[#A3E635]/15 border-[#A3E635]/30 shadow-sm shadow-[#A3E635]/20";
       default:
-        return "text-[#4169FF] bg-[#4169FF]/10 border-[#4169FF]/20";
+        return "text-[#818CF8] bg-[#6366F1]/15 border-[#6366F1]/30 shadow-sm shadow-[#6366F1]/20";
     }
   };
 
   return (
-    <section id="certifications" className="py-24 relative overflow-hidden bg-[#07070B]">
+    <section id="certifications" className="py-24 relative overflow-hidden bg-[#05060A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <SectionHeading
           badge="VALIDATED CREDENTIALS"
           title="Certifications & Badges"
           description="Officially verified competencies evaluated by industry organizations and competitive judging systems."
-          badgeColor="#4169FF"
+          badgeColor="#38BDF8"
         />
 
         {/* Certifications Grid */}
@@ -44,15 +44,15 @@ export default function Certifications() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.08 }}
-              className="p-6 rounded-2xl bg-[#0B0B10] border border-white/[0.08] hover:border-[#4169FF]/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
+              className="p-6 rounded-3xl bg-[#0A0C14] border border-white/[0.09] hover:border-[#6366F1]/50 hover:bg-[#0E111D] transition-all duration-300 flex flex-col justify-between group shadow-xl"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="p-2 rounded-xl bg-[#171720] border border-white/[0.08] group-hover:scale-105 transition-transform">
-                    <Award className="w-5 h-5 text-[#4169FF]" />
+                  <div className="p-2.5 rounded-2xl bg-[#141726] border border-white/[0.08] group-hover:scale-105 transition-transform shadow-sm">
+                    <Award className="w-5 h-5 text-[#38BDF8]" />
                   </div>
                   <span
-                    className={`px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium border ${getIssuerBadgeColor(
+                    className={`px-3 py-1 rounded-full text-[11px] font-mono font-semibold border ${getIssuerBadgeColor(
                       cert.issuer
                     )}`}
                   >
@@ -65,12 +65,12 @@ export default function Certifications() {
                 </h3>
               </div>
 
-              <div className="pt-4 mt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-[#A1A1AA]">
+              <div className="pt-4 mt-4 border-t border-white/[0.06] flex items-center justify-between text-xs font-mono text-[#94A3B8]">
                 <div className="flex items-center gap-1.5">
                   <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
                   <span>{cert.platform || "Official Credential"}</span>
                 </div>
-                <span className="text-[#A1A1AA]/50 font-mono text-[10px]">Verified</span>
+                <span className="text-[#38BDF8] font-mono text-[10px] bg-[#38BDF8]/10 px-2 py-0.5 rounded border border-[#38BDF8]/20">Verified</span>
               </div>
             </motion.div>
           ))}

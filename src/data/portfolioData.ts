@@ -100,7 +100,7 @@ export const PORTFOLIO_DATA = {
     contact: {
       email: "shivamgoyal9119@gmail.com",
       phone: "+91 8107604726",
-      location: "Neem ka Thana, Sikar, Rajasthan, India",
+      location: "Sikar, Rajasthan, India",
       resumeUrl: "/Shivam_Goyal_Resume.pdf",
     },
     socialLinks: [

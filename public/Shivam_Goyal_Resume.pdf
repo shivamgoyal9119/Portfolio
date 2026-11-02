@@ -1,0 +1,74 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1969 >>
+stream
+BT
+/F1 10 Tf
+50 780 Td
+14 TL
+(Shivam Goyal - Software Engineer / Java Backend Developer) '
+(Neem ka Thana, Sikar, Rajasthan, India) '
+(Email: shivamgoyal9119@gmail.com | Phone: +91 8107604726) '
+(Profiles: GitHub | LinkedIn | LeetCode \(1850+\) | CodeChef \(1600+\)) '
+() '
+(EDUCATION:) '
+(JECRC University, Jaipur - B.Tech in CSE \(2023 - 2027\) | CGPA: 8.6) '
+(Relevant Coursework: DSA, OS, OOP, Computer Networks, DBMS, Cloud Computing) '
+(Varda Smart School, Sikar - Senior Secondary \(Class XII\) 70.6% | Secondary 74.8%) '
+() '
+(EXPERIENCE:) '
+(Web Development Intern - Corizo \(June 2024 - August 2024, Remote\)) '
+(- Developed full-stack web applications using MERN Stack) '
+(- Contributed to two team projects covering frontend, backend, and DB integration) '
+(- Designed MongoDB schemas and implemented efficient queries) '
+() '
+(PROJECTS:) '
+(1. AirX Drive - Scalable Cloud File Storage Platform) '
+(   Spring Boot, Microservices, Netflix Eureka, API Gateway, JPA, H2, Resilience4j) '
+(2. MyCineVerse - Movie Ticket Booking Platform) '
+(   Java, Spring Boot, REST APIs, MySQL, JPA, Maven, HTML/CSS/JS) '
+(3. CodeNest - Coding Contest Management Platform) '
+(   Java, Servlets, JSP, JDBC, MySQL, HTML, CSS, JavaScript) '
+() '
+(KEY ACHIEVEMENTS:) '
+(- 1850+ LeetCode Contest Rating \(Top 6.34% globally, Global Rank 645 in Biweekly 182\)) '
+(- 1600+ CodeChef Rating \(Global Rank 82 in Starters 148\)) '
+(- 1500+ DSA Problems Solved across LeetCode, CodeChef, GFG, Codeforces) '
+(- 1st Place Code-O-Mania & 2nd Place Code-A-thon at JECRC Tech Fest) '
+(- Cleared Level 1 and advanced to Level 2 of Deloitte GenW.AI Explorer) '
+() '
+(TECHNICAL SKILLS:) '
+(Languages: Java, C++, C, Python, JavaScript) '
+(Backend: Spring Boot, Microservices, Eureka, API Gateway, Circuit Breaker, JPA, JDBC) '
+(Frontend: React.js, Tailwind CSS, HTML5, CSS3) '
+(Databases: MySQL, MongoDB, PostgreSQL, Schema Design) '
+(Tools: Docker, Git, GitHub, Postman, Maven, Antigravity) '
+ET
+
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000002262 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2332
+%%EOF

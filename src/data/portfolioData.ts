@@ -398,7 +398,7 @@ export const PORTFOLIO_DATA = {
       label: "Global Rank in Biweekly 182",
       context: "Achieved out of tens of thousands of global participants on LeetCode",
       platform: "LeetCode",
-      accentColor: "#4169FF",
+      accentColor: "#00D8F6",
       badge: "Biweekly Contest 182",
     },
     {
@@ -409,7 +409,7 @@ export const PORTFOLIO_DATA = {
       label: "CodeChef Rating",
       context: "Consistent performance in weekly division contests",
       platform: "CodeChef",
-      accentColor: "#5B4638",
+      accentColor: "#0284C7",
       badge: "Division Competitor",
     },
     {
@@ -420,7 +420,7 @@ export const PORTFOLIO_DATA = {
       label: "Global Rank in Starters 148",
       context: "Rank 82 globally on CodeChef Starters 148",
       platform: "CodeChef",
-      accentColor: "#9747FF",
+      accentColor: "#06B6D4",
       badge: "Starters 148",
     },
     {

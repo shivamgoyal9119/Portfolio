@@ -12,7 +12,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-[#050507] text-white selection:bg-[#4169FF]/30 selection:text-white">
+    <main className="relative min-h-screen bg-[#03060E] text-white selection:bg-[#00D8F6]/30 selection:text-white">
       <Navbar />
       <Hero />
       <About />
@@ -27,4 +27,3 @@ export default function Home() {
     </main>
   );
 }
-

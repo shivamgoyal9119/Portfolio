@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { PORTFOLIO_DATA } from "@/data/portfolioData";
-import SectionHeading from "./SectionHeading";
 import {
   Copy,
   Check,
@@ -48,28 +47,28 @@ export default function Contact() {
       case "GitHub":
         return <GithubIcon className="w-4 h-4" />;
       case "LinkedIn":
-        return <LinkedinIcon className="w-4 h-4" />;
+        return <LinkedinIcon className="w-4 h-4 text-[#38BDF8]" />;
       case "LeetCode":
         return <LeetCodeIcon className="w-4 h-4 text-[#FFA116]" />;
       case "CodeChef":
-        return <CodeChefIcon className="w-4 h-4 text-[#C084FC]" />;
+        return <CodeChefIcon className="w-4 h-4 text-[#00D8F6]" />;
       default:
         return <Code className="w-4 h-4" />;
     }
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden bg-[#030407]">
-      {/* Background Glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[650px] h-[550px] bg-gradient-to-t from-[#6366F1]/15 via-[#A855F7]/10 to-transparent blur-[160px] pointer-events-none -z-10" />
+    <section id="contact" className="py-24 relative overflow-hidden bg-[#03060E]">
+      {/* Background Glow (Cyan & Blue, NO PURPLE) */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[650px] h-[550px] bg-gradient-to-t from-[#0284C7]/15 via-[#00D8F6]/10 to-transparent blur-[160px] pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column: Direct info, copy email, socials (6 cols) */}
           <div className="lg:col-span-6 space-y-8">
             <div>
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0A0C14] border border-white/[0.09] text-xs font-mono text-[#38BDF8] mb-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#38BDF8] shadow-[0_0_6px_#38BDF8]" />
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#0B1120] border border-white/[0.09] text-xs font-mono text-[#00D8F6] mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#00D8F6] shadow-[0_0_6px_#00D8F6]" />
                 GET IN TOUCH
               </div>
               <h2 className="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white tracking-tight leading-tight">
@@ -81,7 +80,7 @@ export default function Contact() {
             </div>
 
             {/* Email Contact Card with Copy Feature */}
-            <div className="p-6 rounded-3xl bg-[#0A0C14] border border-white/[0.09] hover:border-[#6366F1]/50 transition-all duration-300 shadow-2xl space-y-4">
+            <div className="p-6 rounded-3xl bg-[#0B1120] border border-white/[0.09] hover:border-[#00D8F6]/50 transition-all duration-300 shadow-2xl space-y-4">
               <div className="text-xs font-mono text-[#94A3B8] uppercase tracking-wider">
                 Direct Correspondence
               </div>
@@ -94,7 +93,7 @@ export default function Contact() {
                 <div className="flex items-center gap-2">
                   <button
                     onClick={copyEmail}
-                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-white bg-[#141726] hover:bg-[#1E233A] border border-white/[0.09] transition-all active:scale-95 shadow-sm"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-white bg-[#15223C] hover:bg-[#1E3054] border border-white/[0.09] transition-all active:scale-95 shadow-sm"
                     aria-label="Copy email address"
                   >
                     {copied ? (
@@ -104,7 +103,7 @@ export default function Contact() {
                       </>
                     ) : (
                       <>
-                        <Copy className="w-3.5 h-3.5 text-[#38BDF8]" />
+                        <Copy className="w-3.5 h-3.5 text-[#00D8F6]" />
                         <span>Copy</span>
                       </>
                     )}
@@ -112,7 +111,7 @@ export default function Contact() {
 
                   <a
                     href={`mailto:${personal.contact.email}`}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#A855F7] hover:from-[#6366F1] hover:to-[#C084FC] shadow-md shadow-[#6366F1]/30 transition-all border border-white/[0.1]"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-[#00D8F6] via-[#0284C7] to-[#2563EB] hover:from-[#38BDF8] hover:to-[#1D4ED8] shadow-md shadow-[#00D8F6]/25 transition-all border border-white/[0.1]"
                   >
                     <Send className="w-3.5 h-3.5" />
                     <span>Send Mail</span>
@@ -123,7 +122,7 @@ export default function Contact() {
               {/* Location & Phone info */}
               <div className="pt-4 border-t border-white/[0.07] grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-[#94A3B8] font-mono">
                 <div className="flex items-center gap-2">
-                  <MapPin className="w-3.5 h-3.5 text-[#A855F7]" />
+                  <MapPin className="w-3.5 h-3.5 text-[#00D8F6]" />
                   <span>{personal.contact.location}</span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -145,10 +144,10 @@ export default function Contact() {
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3.5 rounded-2xl bg-[#0A0C14] border border-white/[0.09] hover:border-[#6366F1]/50 hover:bg-[#0E111D] transition-all duration-200 flex items-center justify-between group shadow-sm"
+                    className="p-3.5 rounded-2xl bg-[#0B1120] border border-white/[0.09] hover:border-[#00D8F6]/50 hover:bg-[#0E1527] transition-all duration-200 flex items-center justify-between group shadow-sm"
                   >
                     <div className="flex items-center gap-2.5">
-                      <div className="p-2.5 rounded-xl bg-[#141726] text-[#94A3B8] group-hover:text-white transition-colors">
+                      <div className="p-2.5 rounded-xl bg-[#15223C] text-[#94A3B8] group-hover:text-white transition-colors">
                         {getSocialIcon(link.platform)}
                       </div>
                       <div>
@@ -160,7 +159,7 @@ export default function Contact() {
                         </div>
                       </div>
                     </div>
-                    <ArrowUpRight className="w-4 h-4 text-[#94A3B8]/50 group-hover:text-[#38BDF8] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                    <ArrowUpRight className="w-4 h-4 text-[#94A3B8]/50 group-hover:text-[#00D8F6] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                   </a>
                 ))}
               </div>
@@ -169,7 +168,7 @@ export default function Contact() {
 
           {/* Right Column: Contact Message Form (6 cols) */}
           <div className="lg:col-span-6">
-            <div className="p-8 rounded-3xl bg-[#0A0C14] border border-white/[0.09] shadow-2xl relative">
+            <div className="p-8 rounded-3xl bg-[#0B1120] border border-white/[0.09] shadow-2xl relative">
               <h3 className="font-heading font-bold text-xl text-white mb-2">
                 Send a Direct Message
               </h3>
@@ -198,7 +197,7 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      className="w-full px-4 py-2.5 rounded-xl bg-[#0E111D] border border-white/[0.08] text-sm text-white placeholder-[#94A3B8]/40 focus:outline-none focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8]/50 transition-all"
+                      className="w-full px-4 py-2.5 rounded-xl bg-[#0E1527] border border-white/[0.08] text-sm text-white placeholder-[#94A3B8]/40 focus:outline-none focus:border-[#00D8F6] focus:ring-1 focus:ring-[#00D8F6]/50 transition-all"
                     />
                   </div>
 
@@ -214,7 +213,7 @@ export default function Contact() {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full px-4 py-2.5 rounded-xl bg-[#0E111D] border border-white/[0.08] text-sm text-white placeholder-[#94A3B8]/40 focus:outline-none focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8]/50 transition-all"
+                      className="w-full px-4 py-2.5 rounded-xl bg-[#0E1527] border border-white/[0.08] text-sm text-white placeholder-[#94A3B8]/40 focus:outline-none focus:border-[#00D8F6] focus:ring-1 focus:ring-[#00D8F6]/50 transition-all"
                     />
                   </div>
                 </div>
@@ -231,7 +230,7 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormData({ ...formData, subject: e.target.value })
                     }
-                    className="w-full px-4 py-2.5 rounded-xl bg-[#0E111D] border border-white/[0.08] text-sm text-white placeholder-[#94A3B8]/40 focus:outline-none focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8]/50 transition-all"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#0E1527] border border-white/[0.08] text-sm text-white placeholder-[#94A3B8]/40 focus:outline-none focus:border-[#00D8F6] focus:ring-1 focus:ring-[#00D8F6]/50 transition-all"
                   />
                 </div>
 
@@ -247,13 +246,13 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    className="w-full px-4 py-2.5 rounded-xl bg-[#0E111D] border border-white/[0.08] text-sm text-white placeholder-[#94A3B8]/40 focus:outline-none focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8]/50 transition-all resize-none"
+                    className="w-full px-4 py-2.5 rounded-xl bg-[#0E1527] border border-white/[0.08] text-sm text-white placeholder-[#94A3B8]/40 focus:outline-none focus:border-[#00D8F6] focus:ring-1 focus:ring-[#00D8F6]/50 transition-all resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#A855F7] hover:from-[#6366F1] hover:via-[#8B5CF6] hover:to-[#C084FC] shadow-lg shadow-[#6366F1]/30 hover:shadow-xl hover:shadow-[#6366F1]/40 transition-all duration-300 flex items-center justify-center gap-2 active:scale-[0.99] border border-white/[0.1]"
+                  className="w-full py-3.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-[#00D8F6] via-[#0284C7] to-[#2563EB] hover:from-[#38BDF8] hover:to-[#1D4ED8] shadow-lg shadow-[#0284C7]/30 hover:shadow-xl hover:shadow-[#0284C7]/40 transition-all duration-300 flex items-center justify-center gap-2 active:scale-[0.99] border border-white/[0.1]"
                 >
                   <Send className="w-4 h-4" />
                   <span>Send Inquiry</span>

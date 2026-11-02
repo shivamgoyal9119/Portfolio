@@ -23,21 +23,21 @@ export default function Skills() {
   const getCategoryIcon = (iconName: string) => {
     switch (iconName) {
       case "Code2":
-        return <Code2 className="w-4 h-4 text-[#38BDF8]" />;
+        return <Code2 className="w-4 h-4 text-[#00D8F6]" />;
       case "Server":
-        return <Server className="w-4 h-4 text-[#818CF8]" />;
+        return <Server className="w-4 h-4 text-[#38BDF8]" />;
       case "Layout":
-        return <Layout className="w-4 h-4 text-[#22D3EE]" />;
+        return <Layout className="w-4 h-4 text-[#0284C7]" />;
       case "Database":
         return <Database className="w-4 h-4 text-emerald-400" />;
       case "Boxes":
         return <Boxes className="w-4 h-4 text-amber-300" />;
       case "Wrench":
-        return <Wrench className="w-4 h-4 text-rose-400" />;
+        return <Wrench className="w-4 h-4 text-cyan-400" />;
       case "Users":
-        return <Users className="w-4 h-4 text-indigo-400" />;
+        return <Users className="w-4 h-4 text-sky-400" />;
       default:
-        return <Code2 className="w-4 h-4 text-[#38BDF8]" />;
+        return <Code2 className="w-4 h-4 text-[#00D8F6]" />;
     }
   };
 
@@ -47,7 +47,7 @@ export default function Skills() {
       : skillCategories.filter((c) => c.title === selectedCategory);
 
   return (
-    <section id="skills" className="py-24 relative overflow-hidden bg-[#030407]">
+    <section id="skills" className="py-24 relative overflow-hidden bg-[#03060E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
@@ -55,18 +55,18 @@ export default function Skills() {
             badge="TECHNICAL COMPETENCIES"
             title="Skills & Technologies"
             description="A comprehensive toolkit cultivated through rigorous coursework, microservice projects, and 1500+ algorithmic challenges."
-            badgeColor="#38BDF8"
+            badgeColor="#00D8F6"
           />
 
           {/* Category Filter Pills */}
-          <div className="flex flex-wrap gap-1.5 p-1 bg-[#0A0C14] rounded-2xl border border-white/[0.08] max-w-full overflow-x-auto shadow-inner shadow-black/50 mb-14 md:mb-0">
+          <div className="flex flex-wrap gap-1.5 p-1 bg-[#0B1120] rounded-2xl border border-white/[0.08] max-w-full overflow-x-auto shadow-inner shadow-black/60 mb-14 md:mb-0">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
                 className={`px-3.5 py-1.5 rounded-xl text-xs font-medium transition-all whitespace-nowrap ${
                   selectedCategory === cat
-                    ? "bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white shadow-md shadow-[#6366F1]/30 font-semibold"
+                    ? "bg-gradient-to-r from-[#00D8F6] to-[#0284C7] text-white shadow-md shadow-[#00D8F6]/30 font-semibold"
                     : "text-[#94A3B8] hover:text-white hover:bg-white/[0.05]"
                 }`}
               >
@@ -81,20 +81,20 @@ export default function Skills() {
           {filteredCategories.map((category) => (
             <div
               key={category.title}
-              className="p-6 rounded-3xl bg-[#0A0C14] border border-white/[0.08] hover:border-[#6366F1]/50 hover:bg-[#0E111D] transition-all duration-300 hover:shadow-xl hover:shadow-[#6366F1]/10 flex flex-col justify-between group"
+              className="p-6 rounded-3xl bg-[#0B1120] border border-white/[0.08] hover:border-[#0284C7]/60 hover:bg-[#0E1527] transition-all duration-300 hover:shadow-xl hover:shadow-[#0284C7]/10 flex flex-col justify-between group"
             >
               <div>
                 {/* Category Header */}
                 <div className="flex items-center justify-between pb-4 border-b border-white/[0.06] mb-5">
                   <div className="flex items-center gap-2.5">
-                    <div className="p-2.5 rounded-xl bg-[#141726] border border-white/[0.08] group-hover:scale-105 transition-transform shadow-sm">
+                    <div className="p-2.5 rounded-xl bg-[#15223C] border border-white/[0.08] group-hover:scale-105 transition-transform shadow-sm">
                       {getCategoryIcon(category.iconName)}
                     </div>
                     <h3 className="font-heading font-bold text-white text-sm tracking-wide">
                       {category.title}
                     </h3>
                   </div>
-                  <span className="font-mono text-[11px] text-[#38BDF8] bg-[#38BDF8]/10 px-2.5 py-0.5 rounded-full border border-[#38BDF8]/20">
+                  <span className="font-mono text-[11px] text-[#00D8F6] bg-[#00D8F6]/10 px-2.5 py-0.5 rounded-full border border-[#00D8F6]/20">
                     {category.skills.length}
                   </span>
                 </div>
@@ -104,9 +104,9 @@ export default function Skills() {
                   {category.skills.map((skill) => (
                     <div
                       key={skill.name}
-                      className="px-3 py-1.5 rounded-xl bg-[#121625] hover:bg-[#181D30] border border-white/[0.07] hover:border-[#38BDF8]/40 text-xs text-slate-200 font-medium transition-all duration-200 flex items-center gap-1.5 group/item cursor-default shadow-sm"
+                      className="px-3 py-1.5 rounded-xl bg-[#10192D] hover:bg-[#16223D] border border-white/[0.07] hover:border-[#00D8F6]/40 text-xs text-slate-200 font-medium transition-all duration-200 flex items-center gap-1.5 group/item cursor-default shadow-sm"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#38BDF8] group-hover/item:shadow-[0_0_8px_#38BDF8] transition-all" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#00D8F6] group-hover/item:shadow-[0_0_8px_#00D8F6] transition-all" />
                       <span>{skill.name}</span>
                     </div>
                   ))}
@@ -116,7 +116,7 @@ export default function Skills() {
               {/* Card Footer status info */}
               <div className="pt-5 mt-5 border-t border-white/[0.05] flex items-center justify-between text-[11px] font-mono text-[#94A3B8]/60">
                 <span>Verified in code &amp; tests</span>
-                <CheckCircle className="w-3.5 h-3.5 text-[#38BDF8]" />
+                <CheckCircle className="w-3.5 h-3.5 text-[#00D8F6]" />
               </div>
             </div>
           ))}

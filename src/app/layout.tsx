@@ -48,13 +48,12 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scroll-smooth">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
-      <body className="bg-[#050507] text-[#FFFFFF] antialiased selection:bg-[#4169FF]/30 selection:text-white min-h-screen relative font-sans">
+      <body className="bg-[#03060E] text-[#F8FAFC] antialiased selection:bg-[#00D8F6]/30 selection:text-white min-h-screen relative font-sans">
         <SpotlightCursor />
         {children}
       </body>
     </html>
   );
 }
-

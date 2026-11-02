@@ -75,7 +75,7 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "py-3 bg-[#030407]/85 backdrop-blur-xl border-b border-white/[0.08] shadow-[0_4px_30px_rgba(0,0,0,0.6)]"
+          ? "py-3 bg-[#03060E]/90 backdrop-blur-xl border-b border-white/[0.08] shadow-[0_4px_30px_rgba(0,0,0,0.7)]"
           : "py-5 bg-transparent"
       }`}
     >
@@ -88,9 +88,9 @@ export default function Navbar() {
             className="group flex items-center gap-3 cursor-pointer select-none"
             aria-label="Shivam Goyal Portfolio Home"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#38BDF8] via-[#6366F1] to-[#A855F7] p-[1.5px] transition-transform duration-300 group-hover:scale-105 shadow-md shadow-[#6366F1]/25">
-              <div className="w-full h-full bg-[#07090E] rounded-[10px] flex items-center justify-center">
-                <span className="font-heading font-bold text-sm tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#38BDF8] via-[#818CF8] to-[#C084FC]">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00D8F6] via-[#0284C7] to-[#2563EB] p-[1.5px] transition-transform duration-300 group-hover:scale-105 shadow-md shadow-[#00D8F6]/25">
+              <div className="w-full h-full bg-[#070C18] rounded-[10px] flex items-center justify-center">
+                <span className="font-heading font-bold text-sm tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#00D8F6] to-[#60A5FA]">
                   {PORTFOLIO_DATA.personal.monogram}
                 </span>
               </div>
@@ -98,7 +98,7 @@ export default function Navbar() {
             <div className="flex flex-col">
               <span className="font-heading font-bold text-base text-white tracking-tight group-hover:text-white transition-colors flex items-center gap-1.5">
                 {PORTFOLIO_DATA.personal.name}
-                <span className="w-1.5 h-1.5 rounded-full bg-[#06B6D4] inline-block shadow-[0_0_8px_#06B6D4] animate-pulse"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#00D8F6] inline-block shadow-[0_0_8px_#00D8F6] animate-pulse"></span>
               </span>
               <span className="font-mono text-[11px] text-[#94A3B8] tracking-wider uppercase">
                 Backend Engineer
@@ -107,7 +107,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-1 bg-[#0C0E17]/85 px-4 py-1.5 rounded-full border border-white/[0.09] backdrop-blur-xl shadow-inner shadow-black/60">
+          <nav className="hidden lg:flex items-center gap-1 bg-[#0B1120]/90 px-4 py-1.5 rounded-full border border-white/[0.09] backdrop-blur-xl shadow-inner shadow-black/70">
             {NAV_ITEMS.map((item) => {
               const isActive = activeSection === item.href.substring(1);
               return (
@@ -122,7 +122,7 @@ export default function Navbar() {
                   }`}
                 >
                   {isActive && (
-                    <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[#6366F1]/25 via-[#8B5CF6]/25 to-[#06B6D4]/20 border border-[#6366F1]/45 -z-10 shadow-sm" />
+                    <span className="absolute inset-0 rounded-full bg-gradient-to-r from-[#00D8F6]/25 to-[#2563EB]/25 border border-[#00D8F6]/45 -z-10 shadow-sm" />
                   )}
                   {item.label}
                 </a>
@@ -137,7 +137,7 @@ export default function Navbar() {
               download="Shivam_Goyal_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#A855F7] hover:from-[#6366F1] hover:via-[#8B5CF6] hover:to-[#C084FC] transition-all duration-300 shadow-md shadow-[#6366F1]/30 hover:shadow-lg hover:shadow-[#6366F1]/40 border border-white/[0.1] active:scale-[0.98]"
+              className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-[#00D8F6] via-[#0284C7] to-[#2563EB] hover:from-[#38BDF8] hover:via-[#0369A1] hover:to-[#1D4ED8] transition-all duration-300 shadow-md shadow-[#00D8F6]/25 hover:shadow-lg hover:shadow-[#00D8F6]/35 border border-white/[0.1] active:scale-[0.98]"
             >
               <FileText className="w-3.5 h-3.5" />
               <span>Resume</span>
@@ -146,7 +146,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="lg:hidden p-2 rounded-xl bg-[#0C0E17] border border-white/[0.09] text-white hover:bg-[#141726] transition-colors"
+              className="lg:hidden p-2 rounded-xl bg-[#0B1120] border border-white/[0.09] text-white hover:bg-[#15223C] transition-colors"
               aria-label="Toggle navigation menu"
               aria-expanded={mobileMenuOpen}
             >
@@ -158,7 +158,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Drawer */}
       <div
-        className={`fixed inset-0 top-[65px] bg-[#030407]/95 backdrop-blur-2xl border-t border-white/[0.09] z-40 transition-all duration-300 lg:hidden ${
+        className={`fixed inset-0 top-[65px] bg-[#03060E]/95 backdrop-blur-2xl border-t border-white/[0.09] z-40 transition-all duration-300 lg:hidden ${
           mobileMenuOpen
             ? "opacity-100 pointer-events-auto translate-y-0"
             : "opacity-0 pointer-events-none -translate-y-4"
@@ -175,12 +175,12 @@ export default function Navbar() {
                   onClick={(e) => scrollToSection(e, item.href)}
                   className={`flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                     isActive
-                      ? "bg-[#141726] text-white border border-[#6366F1]/40 text-[#38BDF8]"
-                      : "text-[#94A3B8] hover:text-white hover:bg-[#0C0E17]"
+                      ? "bg-[#15223C] text-white border border-[#00D8F6]/40 text-[#00D8F6]"
+                      : "text-[#94A3B8] hover:text-white hover:bg-[#0B1120]"
                   }`}
                 >
                   <span>{item.label}</span>
-                  <ChevronRight className={`w-4 h-4 ${isActive ? "text-[#38BDF8]" : "opacity-40"}`} />
+                  <ChevronRight className={`w-4 h-4 ${isActive ? "text-[#00D8F6]" : "opacity-40"}`} />
                 </a>
               );
             })}
@@ -192,7 +192,7 @@ export default function Navbar() {
               download="Shivam_Goyal_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-[#4F46E5] via-[#7C3AED] to-[#A855F7] shadow-lg shadow-[#6366F1]/30"
+              className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-[#00D8F6] via-[#0284C7] to-[#2563EB] shadow-lg shadow-[#00D8F6]/25"
             >
               <FileText className="w-4 h-4" />
               <span>Download Resume</span>

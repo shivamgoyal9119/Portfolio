@@ -7,9 +7,9 @@ export default function CodeNestVisual() {
   const [panelView, setPanelView] = useState<"admin" | "contestant">("admin");
 
   return (
-    <div className="w-full rounded-2xl bg-[#080A12] border border-white/[0.09] p-5 font-mono text-xs shadow-2xl relative overflow-hidden group">
-      {/* Top accent bar */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 via-[#38BDF8] to-[#818CF8]" />
+    <div className="w-full rounded-2xl bg-[#070D1B] border border-white/[0.09] p-5 font-mono text-xs shadow-2xl relative overflow-hidden group">
+      {/* Top accent bar (NO PURPLE) */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 via-[#00D8F6] to-[#0284C7]" />
 
       {/* Header with Role Toggle */}
       <div className="flex items-center justify-between pb-3 border-b border-white/[0.07] mb-4">
@@ -24,12 +24,12 @@ export default function CodeNestVisual() {
         </div>
 
         {/* View Toggle */}
-        <div className="flex bg-[#121625] p-0.5 rounded-lg border border-white/[0.08] text-[10px]">
+        <div className="flex bg-[#0E1527] p-0.5 rounded-lg border border-white/[0.08] text-[10px]">
           <button
             onClick={() => setPanelView("admin")}
             className={`px-2.5 py-0.5 rounded transition-all ${
               panelView === "admin"
-                ? "bg-[#6366F1] text-white font-semibold shadow-sm"
+                ? "bg-[#0284C7] text-white font-semibold shadow-sm"
                 : "text-[#94A3B8] hover:text-white"
             }`}
           >
@@ -39,7 +39,7 @@ export default function CodeNestVisual() {
             onClick={() => setPanelView("contestant")}
             className={`px-2.5 py-0.5 rounded transition-all ${
               panelView === "contestant"
-                ? "bg-[#6366F1] text-white font-semibold shadow-sm"
+                ? "bg-[#0284C7] text-white font-semibold shadow-sm"
                 : "text-[#94A3B8] hover:text-white"
             }`}
           >
@@ -50,9 +50,9 @@ export default function CodeNestVisual() {
 
       {panelView === "admin" ? (
         <div className="space-y-2.5">
-          <div className="p-2.5 rounded-xl bg-[#0E111D] border border-white/[0.07] flex items-center justify-between">
+          <div className="p-2.5 rounded-xl bg-[#0D1527] border border-white/[0.07] flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Shield className="w-3.5 h-3.5 text-[#38BDF8]" />
+              <Shield className="w-3.5 h-3.5 text-[#00D8F6]" />
               <span className="text-white text-[11px] font-sans font-medium">Sprint Round #12 (Active)</span>
             </div>
             <span className="px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 text-[9px] font-mono font-semibold">
@@ -67,13 +67,13 @@ export default function CodeNestVisual() {
               <span className="text-emerald-400 font-semibold">100/100 PTS</span>
             </div>
             <div className="flex items-center gap-2 text-[#94A3B8]">
-              <span className="text-[#38BDF8] font-semibold">Submission #9842:</span>
+              <span className="text-[#00D8F6] font-semibold">Submission #9842:</span>
               <span>Java 17 Solution</span>
               <span>•</span>
               <span className="text-emerald-400 font-medium">PASSED (45ms)</span>
             </div>
-            <div className="w-full bg-[#15192A] h-1.5 rounded-full overflow-hidden">
-              <div className="h-full bg-gradient-to-r from-emerald-500 to-[#38BDF8] w-full" />
+            <div className="w-full bg-[#15223C] h-1.5 rounded-full overflow-hidden">
+              <div className="h-full bg-gradient-to-r from-emerald-500 via-[#00D8F6] to-[#0284C7] w-full" />
             </div>
           </div>
         </div>
@@ -88,8 +88,8 @@ export default function CodeNestVisual() {
               key={item.handle}
               className={`flex items-center justify-between p-2 rounded-lg border text-[10px] ${
                 item.handle === "shivam_g"
-                  ? "bg-[#6366F1]/15 border-[#6366F1]/50 text-white"
-                  : "bg-[#0E111D] border-white/[0.05] text-[#94A3B8]"
+                  ? "bg-[#0284C7]/20 border-[#00D8F6]/50 text-white"
+                  : "bg-[#0D1527] border-white/[0.05] text-[#94A3B8]"
               }`}
             >
               <div className="flex items-center gap-2">
@@ -111,7 +111,7 @@ export default function CodeNestVisual() {
           <CheckCircle2 className="w-3 h-3 text-emerald-400" />
           <span>PreparedStatements • Role RBAC Filter</span>
         </div>
-        <span className="font-mono text-[#38BDF8]">JDBC Pool: 10 Conn</span>
+        <span className="font-mono text-[#00D8F6]">JDBC Pool: 10 Conn</span>
       </div>
     </div>
   );

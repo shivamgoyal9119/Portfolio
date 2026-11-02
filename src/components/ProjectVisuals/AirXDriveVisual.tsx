@@ -7,14 +7,14 @@ export default function AirXDriveVisual() {
   const [activeFile, setActiveFile] = useState<string>("system-design.pdf");
 
   return (
-    <div className="w-full rounded-2xl bg-[#080A12] border border-white/[0.09] p-5 font-mono text-xs shadow-2xl relative overflow-hidden group">
-      {/* Radiant top gradient bar */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#38BDF8] via-[#6366F1] to-[#A855F7]" />
+    <div className="w-full rounded-2xl bg-[#070D1B] border border-white/[0.09] p-5 font-mono text-xs shadow-2xl relative overflow-hidden group">
+      {/* Radiant top gradient bar (NO PURPLE) */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#00D8F6] via-[#0284C7] to-[#2563EB]" />
 
       {/* Cloud Drive Title & Cluster Header */}
       <div className="flex items-center justify-between pb-3 border-b border-white/[0.07] mb-4">
         <div className="flex items-center gap-2">
-          <div className="p-1.5 rounded-lg bg-[#38BDF8]/15 text-[#38BDF8] border border-[#38BDF8]/20">
+          <div className="p-1.5 rounded-lg bg-[#00D8F6]/15 text-[#00D8F6] border border-[#00D8F6]/30">
             <HardDrive className="w-4 h-4" />
           </div>
           <div>
@@ -31,15 +31,15 @@ export default function AirXDriveVisual() {
       </div>
 
       {/* Storage Capacity Bar */}
-      <div className="p-3 rounded-xl bg-[#0F121E] border border-white/[0.06] mb-4">
+      <div className="p-3 rounded-xl bg-[#0D1527] border border-white/[0.06] mb-4">
         <div className="flex justify-between items-center text-[10px] text-[#94A3B8] mb-2 font-sans">
           <span>Cloud Storage Quota (H2 + Object Chunk Store)</span>
           <span className="text-white font-mono font-medium">42.8 GB / 100 GB</span>
         </div>
-        <div className="w-full h-2 bg-[#15192A] rounded-full overflow-hidden flex">
-          <div className="h-full bg-[#38BDF8]" style={{ width: "28%" }} />
-          <div className="h-full bg-[#818CF8]" style={{ width: "14%" }} />
-          <div className="h-full bg-[#C084FC]" style={{ width: "8%" }} />
+        <div className="w-full h-2 bg-[#15223C] rounded-full overflow-hidden flex">
+          <div className="h-full bg-[#00D8F6]" style={{ width: "28%" }} />
+          <div className="h-full bg-[#0284C7]" style={{ width: "14%" }} />
+          <div className="h-full bg-[#38BDF8]" style={{ width: "8%" }} />
         </div>
       </div>
 
@@ -59,12 +59,12 @@ export default function AirXDriveVisual() {
             onClick={() => setActiveFile(file.name)}
             className={`flex items-center justify-between p-2.5 rounded-lg border transition-all cursor-pointer ${
               activeFile === file.name
-                ? "bg-[#141726] border-[#38BDF8]/50 text-white"
-                : "bg-black/40 border-white/[0.04] text-[#94A3B8] hover:bg-[#0E111D] hover:text-white"
+                ? "bg-[#15223C] border-[#00D8F6]/50 text-white"
+                : "bg-black/40 border-white/[0.04] text-[#94A3B8] hover:bg-[#0E1527] hover:text-white"
             }`}
           >
             <div className="flex items-center gap-2.5 truncate">
-              <Folder className="w-3.5 h-3.5 text-[#38BDF8] shrink-0" />
+              <Folder className="w-3.5 h-3.5 text-[#00D8F6] shrink-0" />
               <span className="truncate text-[11px]">{file.name}</span>
             </div>
             <div className="flex items-center gap-3 shrink-0 text-[10px] font-sans">
@@ -78,9 +78,9 @@ export default function AirXDriveVisual() {
       </div>
 
       {/* Architectural Resilience Pill */}
-      <div className="p-2.5 rounded-xl bg-gradient-to-r from-[#6366F1]/15 via-[#38BDF8]/10 to-[#A855F7]/15 border border-[#6366F1]/30 flex items-center justify-between text-[11px]">
+      <div className="p-2.5 rounded-xl bg-gradient-to-r from-[#00D8F6]/15 via-[#0284C7]/10 to-[#2563EB]/15 border border-[#0284C7]/30 flex items-center justify-between text-[11px]">
         <div className="flex items-center gap-2 text-white/95">
-          <ShieldCheck className="w-3.5 h-3.5 text-[#38BDF8]" />
+          <ShieldCheck className="w-3.5 h-3.5 text-[#00D8F6]" />
           <span>Resilience4j Circuit Breaker &amp; Gateway Filter</span>
         </div>
         <span className="text-emerald-400 font-semibold text-[10px]">100% UP</span>

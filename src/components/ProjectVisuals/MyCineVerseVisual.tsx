@@ -15,14 +15,14 @@ export default function MyCineVerseVisual() {
   ];
 
   return (
-    <div className="w-full rounded-2xl bg-[#080A12] border border-white/[0.09] p-5 font-mono text-xs shadow-2xl relative overflow-hidden group">
-      {/* Top accent line */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#8B5CF6] via-[#EC4899] to-[#38BDF8]" />
+    <div className="w-full rounded-2xl bg-[#070D1B] border border-white/[0.09] p-5 font-mono text-xs shadow-2xl relative overflow-hidden group">
+      {/* Top accent line (NO PURPLE) */}
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#00D8F6] via-[#0284C7] to-[#2563EB]" />
 
       {/* Movie & Theater Header */}
       <div className="flex items-center justify-between pb-3 border-b border-white/[0.07] mb-4">
         <div className="flex items-center gap-2.5">
-          <div className="p-1.5 rounded-lg bg-[#8B5CF6]/20 text-[#C084FC] border border-[#8B5CF6]/30">
+          <div className="p-1.5 rounded-lg bg-[#00D8F6]/15 text-[#00D8F6] border border-[#00D8F6]/30">
             <Film className="w-4 h-4" />
           </div>
           <div>
@@ -32,14 +32,14 @@ export default function MyCineVerseVisual() {
             </div>
           </div>
         </div>
-        <span className="px-2.5 py-0.5 rounded text-[10px] bg-[#8B5CF6]/15 text-[#C084FC] border border-[#8B5CF6]/30 font-sans font-semibold">
+        <span className="px-2.5 py-0.5 rounded text-[10px] bg-[#0284C7]/15 text-[#38BDF8] border border-[#0284C7]/30 font-sans font-semibold">
           MySQL JPA Schema
         </span>
       </div>
 
-      {/* Screen Curved Line */}
+      {/* Screen Curved Line (High-Tech Cyan Glow) */}
       <div className="relative my-3 text-center">
-        <div className="w-3/4 mx-auto h-1.5 rounded-full bg-gradient-to-r from-transparent via-[#A855F7] to-transparent shadow-[0_0_15px_rgba(168,85,247,0.7)]" />
+        <div className="w-3/4 mx-auto h-1.5 rounded-full bg-gradient-to-r from-transparent via-[#00D8F6] to-transparent shadow-[0_0_15px_rgba(0,216,246,0.7)]" />
         <span className="text-[9px] uppercase tracking-widest text-[#94A3B8]/60 block mt-1.5 font-medium">
           CURVED AUDITORIUM SCREEN
         </span>
@@ -49,12 +49,12 @@ export default function MyCineVerseVisual() {
       <div className="grid grid-cols-6 gap-2 my-4 max-w-[280px] mx-auto">
         {seats.map((seat) => {
           const isSelected = selectedSeat === seat.id;
-          let seatStyle = "bg-[#141726] border-white/[0.09] text-[#94A3B8] hover:border-[#A855F7]";
+          let seatStyle = "bg-[#15223C] border-white/[0.09] text-[#94A3B8] hover:border-[#00D8F6]";
 
           if (seat.status === "booked") {
             seatStyle = "bg-white/[0.03] border-transparent text-[#94A3B8]/25 cursor-not-allowed";
           } else if (isSelected) {
-            seatStyle = "bg-gradient-to-br from-[#8B5CF6] to-[#A855F7] border-[#C084FC] text-white shadow-md shadow-[#8B5CF6]/40 font-bold";
+            seatStyle = "bg-gradient-to-br from-[#00D8F6] to-[#0284C7] border-[#00D8F6] text-white shadow-md shadow-[#00D8F6]/40 font-bold";
           }
 
           return (
@@ -75,10 +75,10 @@ export default function MyCineVerseVisual() {
       <div className="pt-3 border-t border-white/[0.06] flex items-center justify-between text-[10px] font-sans text-[#94A3B8]">
         <div className="flex items-center gap-3">
           <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-sm bg-[#141726] border border-white/[0.2]" /> Available
+            <span className="w-2 h-2 rounded-sm bg-[#15223C] border border-white/[0.2]" /> Available
           </span>
           <span className="flex items-center gap-1">
-            <span className="w-2 h-2 rounded-sm bg-[#A855F7]" /> Selected
+            <span className="w-2 h-2 rounded-sm bg-[#00D8F6]" /> Selected
           </span>
           <span className="flex items-center gap-1">
             <span className="w-2 h-2 rounded-sm bg-white/[0.05]" /> Booked

@@ -9,29 +9,28 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Deep obsidian canvas & rich slate/indigo-tinted dark surfaces
-        background: "#030407",
-        "bg-secondary": "#07090E",
-        "bg-card": "#0C0E17",
-        "bg-card-hover": "#111422",
-        "bg-elevated": "#161A2B",
-        
-        // High-contrast refined typography
+        // High-tech Deep Midnight Obsidian
+        background: "#03060E",
+        "bg-secondary": "#070C18",
+        "bg-card": "#0B1120",
+        "bg-card-hover": "#10192D",
+        "bg-elevated": "#15223C",
+
+        // Crisp typography
         "text-primary": "#F8FAFC",
         "text-secondary": "#94A3B8",
         "text-muted": "#64748B",
 
-        // Vibrant Modern Electric Accents
-        "electric-blue": "#38BDF8",     // Radiant Sky/Electric Blue
-        "cyber-indigo": "#6366F1",     // Vivid Indigo
-        "vibrant-violet": "#A855F7",   // Glowing Ultraviolet / Purple
-        "neon-cyan": "#06B6D4",        // Hyper Cyan
-        "emerald-glow": "#10B981",     // Status green
-        "amber-gold": "#F59E0B",       // Trophy & achievement gold
+        // Vibrant Tech Blue & Cyan (NO PURPLE)
+        "electric-blue": "#0284C7",   // Rich Sky/Cobalt Blue
+        "royal-blue": "#2563EB",      // Deep High-Tech Royal Blue
+        "neon-cyan": "#00D8F6",       // Luminous Vivid Cyan
+        "hyper-teal": "#06B6D4",      // Deep Cyan / Teal
+        "emerald-glow": "#10B981",    // Crisp Emerald
+        "amber-gold": "#F59E0B",      // Amber for medals
 
-        // Hairline borders
         border: "rgba(255, 255, 255, 0.08)",
-        "border-glow": "rgba(99, 102, 241, 0.35)",
+        "border-glow": "rgba(2, 132, 199, 0.35)",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
@@ -40,23 +39,20 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "accent-gradient": "linear-gradient(135deg, #4F46E5 0%, #7C3AED 50%, #A855F7 100%)",
-        "accent-gradient-hover": "linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #C084FC 100%)",
-        "cyan-indigo-gradient": "linear-gradient(135deg, #06B6D4 0%, #3B82F6 50%, #8B5CF6 100%)",
-        "card-gradient": "linear-gradient(180deg, rgba(16, 20, 35, 0.7) 0%, rgba(10, 12, 20, 0.85) 100%)",
-        "glow-conic": "conic-gradient(from 180deg at 50% 50%, #38BDF8 0deg, #6366F1 120deg, #A855F7 240deg, #38BDF8 360deg)",
+        "accent-gradient": "linear-gradient(135deg, #00D8F6 0%, #2563EB 50%, #1D4ED8 100%)",
+        "accent-gradient-hover": "linear-gradient(135deg, #38BDF8 0%, #3B82F6 50%, #2563EB 100%)",
+        "cyan-blue-gradient": "linear-gradient(135deg, #00D8F6 0%, #0284C7 50%, #1D4ED8 100%)",
+        "card-gradient": "linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(11, 17, 32, 0.85) 100%)",
       },
       boxShadow: {
-        "glow-indigo": "0 0 35px -5px rgba(99, 102, 241, 0.3)",
-        "glow-violet": "0 0 35px -5px rgba(168, 85, 247, 0.3)",
-        "glow-cyan": "0 0 35px -5px rgba(6, 182, 212, 0.3)",
-        "card-subtle": "0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(255, 255, 255, 0.05)",
+        "glow-blue": "0 0 35px -5px rgba(37, 99, 235, 0.3)",
+        "glow-cyan": "0 0 35px -5px rgba(0, 216, 246, 0.3)",
+        "card-subtle": "0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(255, 255, 255, 0.06)",
       },
       animation: {
         "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         float: "float 6s ease-in-out infinite",
         glow: "glow 8s ease-in-out infinite alternate",
-        "gradient-x": "gradientX 12s ease infinite",
       },
       keyframes: {
         float: {
@@ -66,10 +62,6 @@ const config: Config = {
         glow: {
           "0%": { opacity: "0.35", transform: "scale(0.96)" },
           "100%": { opacity: "0.75", transform: "scale(1.04)" },
-        },
-        gradientX: {
-          "0%, 100%": { "background-position": "0% 50%" },
-          "50%": { "background-position": "100% 50%" },
         },
       },
     },

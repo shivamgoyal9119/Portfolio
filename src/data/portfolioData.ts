@@ -94,7 +94,7 @@ export const PORTFOLIO_DATA = {
       "Problem Solver"
     ],
     status: {
-      indicator: "Available for SDE & Backend Internships",
+      indicator: "Available for SDE Internships",
       subtle: "Actively solving problems & building systems",
     },
     contact: {

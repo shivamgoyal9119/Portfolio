@@ -51,9 +51,6 @@ export default function Footer() {
             </a>
 
             <div className="space-y-0.5">
-              <p className="text-xs text-[#94A3B8] font-mono">
-                Designed &amp; Engineered with Next.js &amp; Tailwind CSS
-              </p>
               <p className="text-[11px] text-[#94A3B8]/60 font-mono">
                 © {new Date().getFullYear()} Shivam Goyal. All rights reserved.
               </p>

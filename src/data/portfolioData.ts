@@ -118,13 +118,13 @@ export const PORTFOLIO_DATA = {
       },
       {
         platform: "LeetCode",
-        url: "https://leetcode.com/u/shivamgoyal9119",
+        url: "https://leetcode.com/u/Shivam9119/",
         handle: "shivamgoyal9119",
         icon: "Code",
       },
       {
         platform: "CodeChef",
-        url: "https://www.codechef.com/users/shivamgoyal9119",
+        url: "https://www.codechef.com/users/shivam_9119",
         handle: "shivamgoyal9119",
         icon: "Terminal",
       },
